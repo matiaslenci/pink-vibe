@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+//VARIABLES
+//Tipografias
+$Poppins: "Poppins", sans-serif;
+$Shrinkhand: "Shrikhand", cursive;
+//colores
+$rosaFuerte: #e84996;
+$rosaMedio: #ff95d1;
+$rosaClaro: #fed8ea;
+$blanco:#f8f8f8;
+
+//breakpoints
+$breakpoint-s: 576px;
+$breakpoint-m: 768px;
+$breakpoint-l: 992px;
+$breakpoint-xl: 1200px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: $Poppins;
+  background-color: $blanco;
+  font-weight: 400;
+}
