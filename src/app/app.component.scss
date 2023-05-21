@@ -14,16 +14,16 @@
 .aside {
   grid-area: aside;
   background-color: #fed8ea;
-  min-width: 22rem;
+  width: 22rem;
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  border-top-right-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
+  border-top-right-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
 }
 
 .border {
-  background-color: #e960a2;
+  background-color: #e84996;
   width: 4rem;
 }
 

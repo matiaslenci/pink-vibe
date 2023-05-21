@@ -1,11 +1,85 @@
-.logo{
+.navbar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 5rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.logo-container {
+  margin-top: 2.5rem;
+}
+
+.logo {
   font-family: "Shrikhand", cursive;
-  color: #e84996;
+  color: #E84996;
   font-size: 2.5rem;
 }
 
-.link{
-  color:#e84996;
+.link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.link {
+  color: #e84996;
   font-size: 1.2rem;
   font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icono {
+  width: 38px;
+  height: 38px;
+}
+
+//********
+.navbar {
+  z-index: 1;
+}
+
+
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  //color: #ffff;
+
+  position: relative;
+  display: block;
+  padding: 4px 0;
+
+  color: #ecf0f1;
+  text-decoration: none;
+
+  transition: 0.5s;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #ecf0f1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+  }
+
+  &:hover {
+    color: #ec81b5;
+  }
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
 }
