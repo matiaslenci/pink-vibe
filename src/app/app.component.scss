@@ -1,20 +1,20 @@
 .container {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "aside main main"
-    "aside main main"
-    "aside main main";
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main";
 }
 
 .aside {
   grid-area: aside;
   background-color: #fed8ea;
-  width: 22rem;
+  width: 18rem;
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -24,7 +24,7 @@
 
 .border {
   background-color: #e84996;
-  width: 4rem;
+  width: 2rem;
 }
 
 .main {
