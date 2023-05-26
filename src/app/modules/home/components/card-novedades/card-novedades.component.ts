@@ -14,9 +14,20 @@ export class CardNovedadesComponent {
     this.boxService.hoveredBoxIndex$.subscribe((index) => {
       this.hovered = this.index === index;
     });
+
+    if (this.index === 0) {
+      this.hovered = true;
+      this.boxService.setHoveredBoxIndex(this.index);
+    }
   }
+
+
 
   onMouseEnter() {
     this.boxService.setHoveredBoxIndex(this.index);
+  }
+
+    isHovered() {
+    return this.hovered;
   }
 }

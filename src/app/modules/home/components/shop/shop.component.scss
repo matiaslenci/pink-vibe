@@ -1,0 +1,10 @@
+.titulo{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cambia el número '3' según el número de columnas deseadas */
+  grid-gap: 20px; /* Espacio entre las cards */
+}
