@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { CardNovedadesService } from '../../services/card-novedades.service';
 
 @Component({
   selector: 'app-card-novedades',
@@ -6,5 +7,16 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card-novedades.component.scss'],
 })
 export class CardNovedadesComponent {
-  @Input() ancho: string = '0';
+  @Input() index!: number;
+  hovered: boolean = false;
+
+  constructor(private boxService: CardNovedadesService) {
+    this.boxService.hoveredBoxIndex$.subscribe((index) => {
+      this.hovered = this.index === index;
+    });
+  }
+
+  onMouseEnter() {
+    this.boxService.setHoveredBoxIndex(this.index);
+  }
 }

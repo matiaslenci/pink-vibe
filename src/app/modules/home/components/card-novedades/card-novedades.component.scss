@@ -1,7 +1,12 @@
-.card--novedades{
+
+.box {
   height: 17rem;
   background-color: #ff95d1;
-  overflow: hidden;
-  border-radius:2.5rem;
+  width: 20rem;
+  border-radius: 2.5rem;
+  transition: width 0.3s ease;
+}
 
+.box.hovered {
+  width: 30rem;
 }
