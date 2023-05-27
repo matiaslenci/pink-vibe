@@ -3,8 +3,10 @@
   font-weight: 600;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Cambia el número '3' según el número de columnas deseadas */
-  grid-gap: 20px; /* Espacio entre las cards */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row ;
+  justify-content: space-between; /* Ajusta la alineación horizontal de las tarjetas */
+  gap: 1rem; /* Espacio entre las tarjetas */
 }

@@ -1,1 +1,21 @@
-<div class="card-shop"></div>
+<div class="card-shop-container">
+  <div class="card-shop" *ngFor="let ropa of ropas">
+    <img [src]="ropa.img" alt="" class="img" />
+    <div class="price">
+      <p>${{ ropa.price }}</p>
+    </div>
+    <div class="card-info">
+      <div class="price">
+        <p>${{ ropa.price }}</p>
+      </div>
+      <span class="card-mensaje"> En stock</span>
+    </div>
+  </div>
+</div>
+<!--
+  nombre
+  stock
+  precio
+  img
+  descripcion
+ -->
