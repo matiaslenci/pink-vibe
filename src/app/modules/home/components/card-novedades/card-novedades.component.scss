@@ -2,11 +2,16 @@
 .box {
   height: 17rem;
   background-color: #ff95d1;
-  min-width: 45vh;
+  min-width: 48vh;
   border-radius: 2.5rem;
   transition: min-width 0.3s ease;
 }
 
 .box.hovered {
   min-width: 55vh;
+}
+
+.box-titulo{
+  font-weight: 600;
+
 }

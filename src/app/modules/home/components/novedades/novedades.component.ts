@@ -7,7 +7,7 @@ import { CardNovedadesService } from '../../services/card-novedades.service';
   styleUrls: ['./novedades.component.scss']
 })
 export class NovedadesComponent {
-  boxes = [1, 2, 3];
+  novedades = [1, 2, 3];
 
   constructor(private boxService: CardNovedadesService) {}
 }
