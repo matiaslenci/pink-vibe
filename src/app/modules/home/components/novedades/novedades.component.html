@@ -1,6 +1,11 @@
 <div class="pb-3">
   <h2 class="titulo">Novedades</h2>
 </div>
-<div class="d-flex flex-row flex-wrap justify-content-between ">
-  <app-card-novedades  *ngFor="let novedad of novedades; let i = index" [index]="i"></app-card-novedades>
+<!-- Novedades desde navegador -->
+<div class="d-flex flex-row flex-wrap justify-content-between">
+  <app-card-novedades
+    *ngFor="let novedad of novedades; let i = index"
+    [index]="i"
+  ></app-card-novedades>
 </div>
+<!-- Vista responsive -->

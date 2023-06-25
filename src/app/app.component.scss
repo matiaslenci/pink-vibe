@@ -5,6 +5,7 @@
 
 .contenedor {
   display: flex;
+  background-color: #fff4fb;
 
   @media (max-width: 767px) {
     flex-direction: column;

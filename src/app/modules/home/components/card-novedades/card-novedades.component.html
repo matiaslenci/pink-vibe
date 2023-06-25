@@ -1,8 +1,7 @@
 <div class="box" (mouseenter)="onMouseEnter()" [ngClass]="{ hovered: hovered }">
-  <div class="box-header p-4">
-    <h2 class="box-titulo">Titulo numero 1</h2>
+  <div class="box-header p-4" *ngFor="let item of contenido">
+    <h2 class="box-titulo">{{ item.titulo }}</h2>
+    <img [src]="item.img" alt="" />
   </div>
-  <div class="box-body">
-
-  </div>
+  <div class="box-body"></div>
 </div>

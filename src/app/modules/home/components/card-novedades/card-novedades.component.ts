@@ -9,7 +9,9 @@ import { CardNovedadesService } from '../../services/card-novedades.service';
 export class CardNovedadesComponent {
   @Input() index!: number;
   hovered: boolean = false;
-
+  contenido = [{ titulo: 'titulo 1', img: '...' },
+  { titulo: 'titulo 2', img: '...' }
+];
   constructor(private boxService: CardNovedadesService) {
     this.boxService.hoveredBoxIndex$.subscribe((index) => {
       this.hovered = this.index === index;
@@ -21,13 +23,11 @@ export class CardNovedadesComponent {
     }
   }
 
-
-
   onMouseEnter() {
     this.boxService.setHoveredBoxIndex(this.index);
   }
 
-    isHovered() {
+  isHovered() {
     return this.hovered;
   }
 }
