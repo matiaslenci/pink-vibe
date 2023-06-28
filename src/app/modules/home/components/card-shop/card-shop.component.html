@@ -9,7 +9,9 @@
       <div class="card-mensaje">
         <p class="text-black">{{ ropa.titulo }}</p>
       </div>
-      <span class="card-mensaje">En stock</span>
+      <span class="card-mensaje">{{
+        ropa.stock ? "En stock" : "Sin stock"
+      }}</span>
     </div>
   </div>
 </div>

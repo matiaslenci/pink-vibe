@@ -10,7 +10,14 @@ import { CardNovedadesComponent } from './components/card-novedades/card-novedad
 import { CardShopComponent } from './components/card-shop/card-shop.component';
 
 @NgModule({
-  declarations: [HomeComponent, DropComponent, ShopComponent, NovedadesComponent, CardNovedadesComponent, CardShopComponent],
+  declarations: [
+    HomeComponent,
+    DropComponent,
+    ShopComponent,
+    NovedadesComponent,
+    CardNovedadesComponent,
+    CardShopComponent,
+  ],
   imports: [CommonModule, HomeRoutingModule],
   exports: [HomeComponent],
 })
