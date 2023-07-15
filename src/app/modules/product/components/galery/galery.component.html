@@ -1,17 +1,8 @@
-<div class="card-galery d-flex flex-row justify-content-around">
-  <div class="d-flex flex-column justify-content-between">
-    <div class="">
-      <img [src]="products[1].img" class="img-fluid rounded img-secondary" />
-    </div>
-    <div class="">
-      <img [src]="products[1].img" class="img-fluid rounded img-secondary" />
-    </div>
-    <div class="">
-      <img [src]="products[1].img" class="img-fluid rounded img-secondary" />
-    </div>
-  </div>
+<div class="slider">
+  <img [src]="imagenes[0]" alt="Imagen 1" />
+  <img [src]="imagenes[1]" alt="Imagen 2" />
+  <img [src]="imagenes[2]" alt="Imagen 3" />
 
-  <div class="">
-    <img [src]="products[0].img" class="img-fluid rounded img-primary" />
-  </div>
+  <div class="prev">&#10094;</div>
+  <div class="next">&#10095;</div>
 </div>

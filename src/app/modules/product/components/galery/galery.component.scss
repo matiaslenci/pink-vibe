@@ -1,11 +1,35 @@
-.card-galery{
-  width: 475px;
+ /* Estilos del contenedor del slider */
+ .slider {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
 }
 
-.img-primary{
-  width: 250px;
+/* Estilos de las imágenes */
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.img-secondary{
-  width: 60px;
+/* Estilos de los botones de navegación */
+.slider .prev,
+.slider .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.slider .prev {
+  left: 10px;
+}
+
+.slider .next {
+  right: 10px;
 }

@@ -1,47 +1,41 @@
-<div class="row col-md-10">
-  <div class="col-12">
-    <div class="card-product border-light p-4">
-      <div class="d-flex flex-row align-items-center gap-5">
-        <!--? Fotos -->
-        <app-galery></app-galery>
-        <div class="d-flex flex-column justify-content-around gap-4">
-          <div>
-            <div class="info-main">
-              <h2 class="fw-medium">{{ ropa.titulo }}</h2>
-              <div class="d-flex my-3">
-                <span class="ml-3 stock">
-                  {{ ropa.stock ? "En stock" : "Sin stock" }}
-                </span>
-              </div>
-              <p class="col-md-9">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi molestias sint ad autem exercitationem fugiat, incidunt
-                consectetur impedit omnis nihil consequuntur
-              </p>
-            </div>
-            <div class="d-flex flex-row justify-content-between col-md-8">
-              <button class="btn-talle">S</button>
-              <button class="btn-talle">M</button>
-              <button class="btn-talle">L</button>
-              <button class="btn-talle">XL</button>
-            </div>
+<div class="card-product border-light p-4 row col-md-10">
+  <div class="d-flex flex-row align-items-center gap-5">
+    <!--? Fotos -->
+    <app-galery></app-galery>
+    <div class="d-flex flex-column justify-content-around gap-4">
+      <div class="d-flex flex-column gap-4">
+        <div class="info-main">
+          <h2 class="fw-medium">{{ ropa.titulo }}</h2>
+          <div class="d-flex my-3">
+            <span class="ml-3 stock">
+              {{ ropa.stock ? "En stock" : "Sin stock" }}
+            </span>
           </div>
-          <div
-            class="d-flex flex-row justify-content-start align-content-center gap-5"
-          >
-            <div class="d-flex align-items-center justify-content-start">
-              <h4 class="price mb-0">${{ ropa.price }}</h4>
+          <p class="col-md-9 mb-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            molestias sint ad autem exercitationem fugiat, incidunt consectetur
+            impedit omnis nihil consequuntur
+          </p>
+        </div>
+        <div class="d-flex flex-row justify-content-between col-md-8 py-2">
+          <button class="btn-talle">S</button>
+          <button class="btn-talle">M</button>
+          <button class="btn-talle">L</button>
+          <button class="btn-talle">XL</button>
+        </div>
+      </div>
+      <div
+        class="d-flex flex-row justify-content-start align-content-center gap-5"
+      >
+        <div class="d-flex align-items-center justify-content-start">
+          <h4 class="price mb-0">${{ ropa.price }}</h4>
 
-              <!-- descuento -->
-              <!--   <span class="h6 mb-0 text-danger">$199.00</span> -->
-            </div>
-            <!--? Botones -->
-            <div class="d-flex felx-row">
-              <button class="btn btn-raised fw-medium">
-                Añadir al carrito
-              </button>
-            </div>
-          </div>
+          <!-- descuento -->
+          <!--   <span class="h6 mb-0 text-danger">$199.00</span> -->
+        </div>
+        <!--? Botones -->
+        <div class="d-flex felx-row">
+          <button class="btn btn-raised fw-medium">Añadir al carrito</button>
         </div>
       </div>
     </div>
